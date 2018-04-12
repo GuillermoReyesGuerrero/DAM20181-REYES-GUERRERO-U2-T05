@@ -1,0 +1,45 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>CURP</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+
+    <h1>Tu eres ..</h1>
+      <ion-card *ngIf= "ingresar.si">
+          <ion-card-header>
+            Hombre
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list >
+                 <button ion-item>Fuerte</button>
+                 <button ion-item>Bigote</button>
+                 <button ion-item>Barba</button>
+                 <button ion-item>Formal</button>
+                 <button ion-item>Feo</button>
+
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+    
+        
+        <ion-card *ngIf= "!ingresar.si">
+                <ion-card-header>
+                 Mujer
+                </ion-card-header>
+                <ion-card-content>
+                  <ion-list >
+                       <button ion-item>Inteligente</button>
+                       <button ion-item>Bonita</button>
+                       <button ion-item>Luchona</button>
+                  </ion-list>
+                </ion-card-content>
+              </ion-card>
+        <div>
+            <button ion-button primary block (click)="Regresar()">Regresar</button>
+        </div>
+  </ion-content>
